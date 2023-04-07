@@ -1,0 +1,31 @@
+$ echo "# -SI_2023_lab1_203063" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git branch -M master
+$ git remote add origin https://github.com/hristijan17/-SI_2023_lab1_203063.git
+$ git push -u origin master
+$git add .
+$ git commit -m "initial commit"
+$git add .
+$ git commit -m "Add java class"
+$git push origin master
+$git checkout bug1
+$git add .
+$ git commit -m "Fix wrong loop for reading"
+$git checkout -b bug2
+$git add .
+$ git commit -m "Fix wrong loop condition in filterOddNumbers"
+$git checkout -b bug3
+$git add .
+$ git commit -m "sumEvenNumbers."
+$git push origin master
+$git checkout master
+$git merge bug1
+$git push origin master
+$git merge bug2
+$git push origin master
+$git checkout bug3
+$git rebase master
+$git checkout master
+$git merge bug3
